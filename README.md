@@ -1,6 +1,6 @@
 ## Frontend Mentor - 3 Column Preview Card.
 
-### LIVE PREVIEW: https://enzomdev.github.io/fm-3column-preview-card/
+### LIVE PREVIEW: https://enzom-uy.github.io/fm-3column-preview-card/
 
 Desktop preview:
 ![Desktop preview](https://i.imgur.com/3ICegWR.png)
