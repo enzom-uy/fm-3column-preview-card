@@ -1,0 +1,110 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap");
+.main {
+  border-radius: 10px;
+}
+
+svg {
+  margin-top: 2.5rem;
+  margin-bottom: 35px;
+}
+
+span {
+  color: #f2f2f2;
+  font-family: "Big Shoulders Display", cursive;
+  font-size: 32px;
+}
+
+p {
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.75);
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 15px;
+  max-width: 25ch;
+  margin-bottom: 30px;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5rem 1rem;
+}
+body .container {
+  width: 100vw;
+  max-width: 300px;
+  padding-left: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+body .container button {
+  margin-bottom: 3rem;
+  border: none;
+  background-color: white;
+  color: #e38826;
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 13px;
+  border-radius: 20px;
+  width: 140px;
+  height: 40px;
+}
+body .container.card1 {
+  background-color: #e38826;
+  border-radius: 10px 10px 0 0;
+}
+body .container.card2 {
+  background-color: #006970;
+}
+body .container.card2 button {
+  color: #006970;
+  font-size: 13px;
+}
+body .container.card3 {
+  background-color: #004241;
+  border-radius: 0 0 10px 10px;
+}
+body .container.card3 button {
+  color: #004241;
+}
+
+@media (min-width: 1024px) {
+  body {
+    display: grid;
+    place-items: auto center;
+    height: 100vh;
+    padding: 0;
+  }
+  body .main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: "a b c";
+  }
+  body .main .container {
+    max-width: 250px;
+    border-radius: 0;
+  }
+  body .main .container button {
+    cursor: pointer;
+  }
+  body .main .container button:hover {
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+  }
+  body .main p {
+    margin-bottom: 4rem;
+    max-width: 24ch;
+  }
+  body .main .card1 {
+    border-radius: 10px 0 0 10px;
+  }
+  body .main .card2 {
+    display: grid;
+    grid-area: b;
+  }
+  body .main .card3 {
+    border-radius: 0 10px 10px 0;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */
